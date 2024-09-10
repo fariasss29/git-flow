@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int num, divisor;
+    int contador = 1;
+    int soma = 0;
+    printf("por favor insira um numero natural: ");
+    scanf("%d", &num);
+    
+    while(num >= contador){
+        if(num % contador  == 0){
+            soma = soma + contador;
+        }
+        contador ++;
+        }
+    printf("o resultado é: %d", soma);
+    return 0;
+}
